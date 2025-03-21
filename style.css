@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    animation: gradientBG 10s infinite linear;
+    background-size: 300% 300%;
+}
+
+/* Keyframe animation for gradient transition */
+@keyframes gradientBG {
+    0% { background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5e62); }
+    25% { background: linear-gradient(45deg, #ff758c, #ff5e62, #ff9966); }
+    50% { background: linear-gradient(45deg, #ff5e62, #ff9966, #ffcc33); }
+    75% { background: linear-gradient(45deg, #ff9966, #ffcc33, #ff7eb3); }
+    100% { background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff5e62); }
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
