@@ -7,8 +7,9 @@ const colors = [
 
 let step = 0;
 function changeGradient() {
+    document.body.style.transition = "background 5s ease-in-out";
     document.body.style.background = `linear-gradient(45deg, ${colors[step][0]}, ${colors[step][1]}, ${colors[step][2]})`;
     step = (step + 1) % colors.length;
 }
 
-setInterval(changeGradient, 3000); // Change gradient every 3 seconds
+setInterval(changeGradient, 5000); // Change gradient every 5 seconds
